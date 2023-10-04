@@ -34,9 +34,11 @@ img {
 }
 
 .container {
-  width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*header*/
@@ -400,19 +402,20 @@ img {
 /*footer*/
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
 }
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+ gap: 70px;
+ height: 664px;
+ margin-top: auto;
+ margin-bottom: auto;
+ justify-content: center;
 }
-.erste-footer {
-  margin-right: 120px;
-}
+
 .logo-footer {
-  display: inline-block;
-  align-items: center;
-  flex-shrink: 0;
+display: flex;
+justify-content: center;
   margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -431,6 +434,12 @@ img {
   color: #f4f4fd;
   letter-spacing: 0.02em;
   max-width: 264px;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .social-par {
   font-weight: 500;
@@ -470,7 +479,10 @@ img {
 }
 
 .subscribe {
-  margin-left: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .subscribe-par {
   font-family: Roboto;
@@ -489,12 +501,15 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  flex-direction: column;
+  align-items: center;
+
 }
 .label-sub {
   color: #ffffff;
 }
 .subscribe-input {
-  width: 264px;
+  width: 288px;
   height: 40px;
   color: #ffffff;
   border: 1px solid #ffffff;
@@ -513,6 +528,7 @@ img {
   min-width: 165px;
   height: 40px;
   display: flex;
+  
   justify-content: center;
   align-items: center;
 
@@ -761,4 +777,57 @@ img {
 }
 .form-button:focus {
   background-color: #404bbf;
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+ .footer {
+
+ } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 1158px) {
+    .container {
+      max-width: 1158px;
+    }
+    .footer {
+      background-color: #2e2f42;
+      padding: 100px 0;
+    }
+    .footer-container {
+      display: flex;
+      align-items: baseline;
+    }
+    .erste-footer {
+      margin-right: 120px;
+    }
+    .logo-footer {
+      display: inline-block;
+      align-items: center;
+      flex-shrink: 0;
+  }
+  .subscribe {
+    margin-left: 80px;
+  }
+  .subscribe-input {
+    width: 264px;
 }
