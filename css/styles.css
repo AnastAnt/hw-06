@@ -70,6 +70,7 @@ img {
 .header-navigation {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -169,8 +170,21 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.menu-toggle {
+  min-height: 28px;
+  min-width: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
 @media screen and (min-widht: 767.86px) {
-  .hero-icons {
+  .menu-toggle {
     display: none;
   }
 }
@@ -178,7 +192,7 @@ img {
 /*section-one*/
 .section-one {
   background-color: #2e2f42;
-  padding: 188px 0;
+  padding: 72px 0;
 
   background-repeat: no-repeat;
   background-position: center;
@@ -242,20 +256,48 @@ img {
       url(../images/Dark-bg_desk@2x.jpg);
   }
 }
+
+@media screen and (min-width: 768px) {
+  .section-one{
+    padding: 112px 0;
+  }
+}
+
+
+@media screen and (min-width: 1158px) {
+  .section-one{
+    padding: 188px 0;
+  }
+}
+
 .section-big-title {
-  width: 288px;
-  height: 160px;
-  font-size: 36px;
+  max-width: 288px;
+  color: var(--WHITE, #fff);
   text-align: center;
-  color: #ffffff;
-  max-width: 496px;
-  margin: 32px 16px;
-  font-style: normal;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
 }
+@media screen and (min-width: 768px) {
+  .section-big-title {
+    max-width: 496px;
+    height: 120px;
+    font-size: 56px;
+    line-height: 1.11;
+    letter-spacing: 1.12px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .section-big-title {
+    max-width: 496px;
+    margin: 32px 16px;
+    line-height: 40px;
+    letter-spacing: 1.12px;
+  }
+}
+
 .section-one-button {
   background-color: #4d5ae5;
   font-family: "Roboto", sans-serif;
@@ -498,14 +540,14 @@ img {
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
-  .portfolio-img{
+  .portfolio-img {
     width: 356px;
   }
 }
 @media screen and (min-width: 1158px) {
-  .portfolio-img{
+  .portfolio-img {
     width: 360px;
-}
+  }
 }
 
 .cont-last {
@@ -922,6 +964,11 @@ img {
 
   transform: translateX(100%);
   transition: transform 300ms ease-in;
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
 }
 .menu-container.is-open {
   transform: translateX(0);
