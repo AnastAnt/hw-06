@@ -179,18 +179,69 @@ img {
 .section-one {
   background-color: #2e2f42;
   padding: 188px 0;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 320px;
+  margin: 0 auto;
+
+  /* mobile scrin */
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 1440px;
-  margin: 0 auto;
+    url(../images/Dark-bg_mob.jpg);
 }
-
+@media only screen and (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg_mob@2x.jpg);
+  }
+}
+/* tablet scrin */
+@media only screen and (min-widht: 768px) {
+  .section-one {
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg_tab.jpg);
+  }
+}
+@media only screen and (min-widht: 768px) and (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg_tab@2x.jpg);
+  }
+}
+/* desktop scrin */
+@media only screen and (min-widht: 1168px) {
+  .section-one {
+    max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg_desk.jpg);
+  }
+}
+@media only screen and (min-widht: 11680px) and (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg_desk@2x.jpg);
+  }
+}
 .section-big-title {
   width: 288px;
   height: 160px;
@@ -312,7 +363,6 @@ img {
     display: flex;
   }
 }
-
 .section-title {
   color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
@@ -335,7 +385,6 @@ img {
   color: #2e2f42;
   margin-bottom: 72px;
 }
-
 .section-text {
   color: var(--SLATE, #434455);
   font-family: Roboto;
@@ -351,7 +400,6 @@ img {
   background-color: #f4f4fd;
   padding: 96px 0;
 }
-
 .team-list {
   display: flex;
   gap: 72px;
@@ -381,7 +429,6 @@ img {
   margin-bottom: 8px;
   text-align: center;
 }
-
 .section-text-three {
   font-size: 16px;
   line-height: 1.5;
@@ -449,6 +496,16 @@ img {
 .box-overlay {
   position: relative;
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-img{
+    width: 356px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .portfolio-img{
+    width: 360px;
+}
 }
 
 .cont-last {
