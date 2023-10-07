@@ -222,7 +222,7 @@ img {
   }
 }
 /* tablet scrin */
-@media screen and (min-widht: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157.98px) {
   .section-one {
     max-width: 768px;
     max-height: 436px;
