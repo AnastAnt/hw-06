@@ -931,8 +931,8 @@ img {
 
 .modal {
   position: absolute;
-  top: 40%;
-    left: 30%;
+  top: 41%;
+  left: 32%;
   transform: translate(-50%, -50%) scale(1);
   width: 288px;
   min-height: 623px;
@@ -946,14 +946,14 @@ img {
 @media screen and (min-width: 768px) {
   .modal {
     top: 50%;
-  left: 50%;
-  width: 408px;
-  min-height: 584px;
-}}
+    left: 50%;
+    width: 408px;
+    min-height: 584px;
+  }
+}
 
-
-    transform: translate(-50%, -50%) scale(1);
-    width: 288px;
+transform: translate(-50%, -50%) scale(1);
+width: 288px;
 .modal-button {
   position: absolute;
   top: 24px;
