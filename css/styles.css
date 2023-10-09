@@ -57,6 +57,7 @@ img {
 .header-navigation {
   display: flex;
   align-items: center;
+  gap: 120px;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -1188,5 +1189,5 @@ img {
       ),
       url(../images/Dark-bg_desk@2x.jpg);
   }
-  
+
 }
