@@ -987,6 +987,7 @@ img {
   .team-list-last {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     column-gap: 24px;
     row-gap: 72px;
   }
