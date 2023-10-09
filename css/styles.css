@@ -188,7 +188,7 @@ img {
 }
 
 .section-big-title {
-  max-width: 288px;
+  max-width: 217px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -398,13 +398,6 @@ img {
     border: 1px solid #e7e9fc;
   border-radius: 0px 0px 4px 4px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.cont-last {
-
-  border-top: none;
-  padding: 32px 16px;
 }
 
 .overlay-text {
