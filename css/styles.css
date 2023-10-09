@@ -466,6 +466,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: baseline;
+  gap: 72px;
 }
 
 .logo-footer {
