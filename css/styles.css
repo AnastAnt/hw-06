@@ -170,7 +170,7 @@ img {
   background-size: cover;
 
   /* mobile scrin */
-  max-width: 320px;
+  max-width: 767px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -945,7 +945,7 @@ img {
   .section-one {
     padding: 112px 0;
     /* tablet scrin */
-    max-width: 768px;
+    max-width: 1439px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1051,7 +1051,7 @@ img {
 
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1158px;
+    max-width: 1440px;
     padding-left: 15px;
     padding-right: 15px;
   }
