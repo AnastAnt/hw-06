@@ -1200,7 +1200,7 @@ img {
   }
 }
 /* desktop scrin */
-@media screen and (min-resolution: 192dpi) and (min-width: 1200px) {
+@media screen and (min-resolution: 192dpi) and (min-width: 1158px) {
   .section-one {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
