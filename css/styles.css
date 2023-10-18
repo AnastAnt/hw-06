@@ -171,7 +171,7 @@ img {
   background-size: cover;
 
   /* mobile scrin */
-  max-width: 767px;
+  max-width: 320px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -905,7 +905,7 @@ img {
   .section-one {
     padding: 112px 0;
     /* tablet scrin */
-    max-width: 1439px;
+    max-width: 768px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
