@@ -797,14 +797,17 @@ img {
   background-color: #fff;
 
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 
   transform: translateX(100%);
-  transition: transform 300ms ease-in;
+}
+.mobile-menu {
+  max-width: 320px;
 }
 
 .menu-container.is-open {
   transform: translateX(0);
+  transition: transform 300ms ease-in;
 }
 .mobile-menu-button {
   position: absolute;
