@@ -1047,6 +1047,7 @@ img {
   }
   .section-big-title {
     max-width: 496px;
+    letter-spacing: 0.02em;
   }
   .section-one-button {
     letter-spacing: 0.02em;
